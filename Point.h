@@ -11,7 +11,7 @@ private:
 
 public:
     // Constructors
-    Point();                      // default constructor
+    Point(){};                      // default constructor
     Point(double x, double y, double z);    // two-argument constructor
 
     // Mutator methods

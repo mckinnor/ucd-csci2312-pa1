@@ -7,6 +7,12 @@
 
 using namespace std;
 
+Point::Point(double x, double y, double z) {
+    setX(x);
+    setY(y);
+    setZ(z);
+}
+
 double Point::distanceTo(const Point &p1, const Point &p2) const {
     double x1, x2, y1, y2, z1, z2;
     double dis;
