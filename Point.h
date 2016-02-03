@@ -11,8 +11,8 @@ private:
 
 public:
     // Constructors
-    Point(){};                      // default constructor
-    Point(double x, double y, double z);    // two-argument constructor
+    Point(){setX(0.0); setY(0.0), setZ(0.0);};                      // default constructor
+    Point(double x, double y, double z);                            // two-argument constructor
 
     // Mutator methods
     void setX(double newX){x = newX;}
