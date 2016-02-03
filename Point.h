@@ -15,13 +15,15 @@ public:
     Point(double x, double y);    // two-argument constructor
 
     // Mutator methods
-    void setX(double newX);
-    void setY(double newY);
+    void setX(double newX){x = newX;}
+    void setY(double newY){y = newY;}
 
     // Accessor methods
-    double getX() const;
-    double getY() const;
-    
+    double getX() const{return x;}
+    double getY() const{return y;}
+
+
+    double distanceTo(const Point &p1, const Point &p2) const;
 };
 
 #endif // __POINT_H
