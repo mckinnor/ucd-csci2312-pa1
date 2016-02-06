@@ -25,6 +25,7 @@ double Point::distanceTo(const Point &p1, const Point &p2) const {
     y2 = p2.getY();
     z2 = p2.getZ();
 
+    //pythagoras's formula
     dis = sqrt(pow((z2 - z1),2) + pow((x2 - x1),2) + pow((y2 - y1),2));
 
     return dis;
